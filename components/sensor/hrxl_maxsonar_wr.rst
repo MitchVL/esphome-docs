@@ -41,6 +41,16 @@ multiple times per second, filtering is highly recommended.
             - throttle: "20min"
             - delta: 0.02
 
+It is possible that you have to invert the logic levels on the incoming pin.
+
+.. code-block:: yaml
+    uart:
+      rx_pin:
+        number: D1
+        inverted: true
+      baud_rate: 9600
+
+
 
 Configuration variables:
 ------------------------
